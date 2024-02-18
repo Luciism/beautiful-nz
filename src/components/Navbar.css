@@ -1,0 +1,202 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+    height: 100px;
+
+    padding: 10px 50px;
+
+    --box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+
+    & .logo-img {
+        width: auto;
+        height: 70px;
+    }
+
+    & .hamburger-menu-icon {
+        z-index: 10000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    & .language-selector-wrapper {
+        border-radius: 1000px;
+        padding: 0.5rem 1.5rem;
+
+
+        & .language-selector {
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 400;
+            border: none;
+    
+        }
+
+        &:hover,
+        & .language-selector:hover {
+            cursor: pointer;
+        }
+    }
+
+    & .navigation {
+        display: flex;
+        align-items: center;
+
+
+        & .navlinks {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            transition: right 0.3s ease-in-out;
+    
+            & a {
+                transition: color 0.3s ease-in-out;
+                color: var(--accent);
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--primary);
+                    cursor: pointer;
+                }
+            }
+    
+            & li {
+                list-style: none;
+            }
+
+            
+            & .navlink-dropdown {
+            @media (width >= 1000px) {
+                &:hover .navlink-sublinks {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                & .navlink-sublinks {
+                    opacity: 0;
+                    visibility: hidden;
+                    position: absolute;
+                    box-shadow: var(--box-shadow-down);
+                    width: 300px;
+                }
+            }
+
+                & .navlink-sublinks {
+                    transition: all 0.3s ease-in-out;
+
+                    background-color: var(--background);
+                    border-radius: 4px;
+
+                    height: auto;
+
+                    padding: 1rem 2rem;
+
+                    & ul {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                }
+                & .navlink-dropdown-text {
+                    display: flex;
+                    align-items: center;
+
+                    & span {
+                        margin-right: 2px;
+                    }
+
+                    & .icon {
+                        font-size: 1.25em;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.navbar .navigation > *:not(:first-child),
+.navbar .navigation .navlinks > *:not(:first-child) {
+    margin-left: 50px;
+}
+
+@media (width >= 1000px) {
+    .navbar .navigation .hamburger-menu-icon {
+        opacity: 0;
+        max-width: 0;
+        margin-left: 0;
+    }
+} 
+
+@media (width < 1000px) {
+    .navbar {
+        & .navigation {
+            & .navlinks {
+                z-index: 1;
+                top: 0;
+                right: -300px;
+
+                width: 300px;
+
+                align-items: flex-start;
+
+                background-color: var(--background);
+
+                position: absolute;
+                flex-direction: column;
+                box-shadow: var(--box-shadow-down);
+
+                margin: 0;
+                padding: 100px 50px;
+
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+
+                & li {
+                    margin-left: 0 !important;
+                    font-size: 20px;
+                }
+
+                &.open {
+                    right: 0;
+                }
+
+                & .navlink-dropdown {
+                    /* &:hover .navlink-sublinks, */
+                    &.active .navlink-sublinks {
+                        display: flex;
+                    }
+
+                    & .navlink-sublinks {
+                        transition: all 0.3s ease-in-out;
+                        display: none;
+
+                        padding: 0rem 2rem 0.6rem;
+
+                        & ul {
+                            margin: 0;
+                            padding: 0;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (width < 400px) {
+    .navbar {
+        padding: 10px 25px;
+
+        & .language-selector-wrapper {
+            margin-left: 0 !important;
+        }
+    }
+}
