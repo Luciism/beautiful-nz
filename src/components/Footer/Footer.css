@@ -1,14 +1,18 @@
 .footer {
-    padding: 50px 0;
+    background-color: var(--background);
+    padding: 25px 0;
     margin-top: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     box-shadow: var(--box-shadow-nav-and-foot);
     -webkit-box-shadow: var(--box-shadow-nav-and-foot);
     -moz-box-shadow: var(--box-shadow-nav-and-foot);
 
     & .footer-links-category {
+        padding: 25px 25px;
+
         & .category-title {
             & h3 {
                 padding: 2px 0;
