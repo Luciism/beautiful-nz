@@ -5,7 +5,17 @@
 body {
     margin: 0;
     padding: 0;
-    width: max-content;
+    width: 100vw;
     background-color: var(--background);
     overflow-x: hidden;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin-top: 100px;
 }

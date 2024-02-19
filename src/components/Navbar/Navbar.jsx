@@ -1,7 +1,7 @@
 import { useRef, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 
-import { DataContext } from "../DataContext";
+import { DataContext } from "../../DataContext";
 import { Icon } from '@iconify/react';
 
 import "./Navbar.css";

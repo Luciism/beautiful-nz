@@ -17,7 +17,6 @@
   # to run something each time the environment is rebuilt, use the `onStart` hook
   idx.workspace.onCreate = {
     npm-install = "npm install";
-    install-react-router-dom = "npm install react-router-dom";
   };
   # preview configuration
   idx.previews = {

@@ -1,0 +1,43 @@
+.footer {
+    padding: 50px 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+
+    box-shadow: var(--box-shadow-nav-and-foot);
+    -webkit-box-shadow: var(--box-shadow-nav-and-foot);
+    -moz-box-shadow: var(--box-shadow-nav-and-foot);
+
+    & .footer-links-category {
+        & .category-title {
+            & h3 {
+                padding: 2px 0;
+                margin: 0;
+            }
+
+            & hr {
+                border: none;
+                height: 2px;
+                background-color: var(--text);
+                width: 34px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        & ul {
+            margin: 16px 0 0 0;
+            padding: 0;
+            list-style: none;
+
+            & a {
+                text-decoration: none;
+                color: var(--text);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
