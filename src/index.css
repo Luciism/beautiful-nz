@@ -12,6 +12,7 @@
   --background: #f2faf7;
   --primary: #58bf9e;
   --secondary: #9cc3d9;
+  --secondary-translucent: rgba(156, 195, 217, 0.85);
   --accent: #7098c8;
 
   --box-shadow-down: 0px 1px 3px 0px rgba(0,0,0,0.75);
@@ -61,4 +62,17 @@
     border-radius: inherit;
     background: linear-gradient(to bottom, var(--primary), var(--accent));
   }
+}
+
+.pill-btn {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text);
+  background-color: var(--primary);
+  padding: 0.45rem 1rem;
+  border-radius: 1000px;
+}
+
+.background-gradient-down {
+  background-image: linear-gradient(to bottom, var(--primary), var(--accent));
 }
