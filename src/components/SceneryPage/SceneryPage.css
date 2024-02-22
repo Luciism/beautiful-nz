@@ -1,11 +1,11 @@
 .scenery-page {
     & .scenery-intro {
-        width: 100vw; /* temp */
-        height: 500px; /* temp */
+        width: 100vw; /* temp.. or maybe not? */
+        height: 600px; /* temp.. or maybe not? */
 
-        background-image: linear-gradient(
+        /* background-image: linear-gradient(
             to left, transparent, var(--background)
-        ), url("../../assets/images/beach-wide.png");
+        ), url("../../assets/images/img-wide.png"); */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -22,7 +22,7 @@
     
         &::after {
             content: "";
-            background-image: url("../../assets/images/wave-transition.png");
+            /* background-image: url("../../assets/images/default-transition.png"); */
             background-repeat: no-repeat;
             background-position: top left;
             background-size: cover;
@@ -31,7 +31,6 @@
             position: absolute;
             bottom: -1px;
             left: 0;
-            
         }
 
         & .intro-heading {
@@ -54,7 +53,7 @@
             margin-top: 24px;
             font-size: 20px;
             line-height: 26px;
-            max-width: 550px;
+            max-width: 600px;
         }
     }
 

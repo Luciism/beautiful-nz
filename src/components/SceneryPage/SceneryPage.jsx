@@ -4,9 +4,15 @@ import './SceneryPage.css'
 const SceneryPage = ({ intro, sceneryPanels }) => {
     const introHeading = intro.heading.split(" ");
 
+    console.log(`linear-gradient(
+        to left, transparent, var(--background)
+    ), url("${intro.backgroundImage}");`);
+
     return (
         <div className='scenery-page'>
-            <div className="scenery-intro">
+            <div className="scenery-intro" style={{backgroundImage: `linear-gradient(
+                to left, transparent, var(--background)), url("${intro.backgroundImage}"
+            )`}}>
                 <h1 className='intro-heading'>
                     <span className='heading-line-1'>{introHeading[0]}</span>
                     <br />
