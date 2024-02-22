@@ -1,5 +1,3 @@
-import './Beaches.css'
-
 import SceneryPanel from "../../components/SceneryPanel/SceneryPanel";
 import BeachPihaImage from "../../assets/images/beach-display-piha.png";
 import BeachHaheiImage from "../../assets/images/beach-display-hahei.png";

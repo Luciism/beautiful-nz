@@ -5,7 +5,7 @@ const SceneryPage = ({ intro, sceneryPanels }) => {
     const introHeading = intro.heading.split(" ");
 
     return (
-        <div className='beaches-page'>
+        <div className='scenery-page'>
             <div className="scenery-intro">
                 <h1 className='intro-heading'>
                     <span className='heading-line-1'>{introHeading[0]}</span>
