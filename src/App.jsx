@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import HomePage from './pages/HomePage/HomePage'
+import Beaches from './pages/Beaches/Beaches';
 
 function App() {
   const supportedLanguages = ["en", "reo"];
@@ -27,6 +28,7 @@ function App() {
           
             <Routes>
               <Route exact path="/" element={<HomePage />} />
+              <Route exact path="/explore/beaches" element={<Beaches />} />
             </Routes>
         </div>
         <Footer/ >

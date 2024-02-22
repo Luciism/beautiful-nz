@@ -27,9 +27,9 @@ const Footer = () => {
             <FooterLinksCategory
                 name={lang == "en" ? "EXPLORE" : "HŌPARA"}
                 links={[
-                    { name: lang == "en" ? "Beaches" : "Tātahi", url: "Pūrangi" },
-                    { name: lang == "en" ? "Bushes" : "Pūrangi", url: "" },
-                    { name: lang == "en" ? "Mountains" : "Nga maunga", url: "" },
+                    { name: lang == "en" ? "Beaches" : "Tātahi", url: "/explore/beaches" },
+                    { name: lang == "en" ? "Bushes" : "Pūrangi", url: "/explore/bushes" },
+                    { name: lang == "en" ? "Mountains" : "Nga maunga", url: "/explore/mountains" },
                 ]}
             />
             <FooterLinksCategory

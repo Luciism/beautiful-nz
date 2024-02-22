@@ -97,9 +97,9 @@ const Navbar = () => {
             <div className="navigation">
                 <ul className="navlinks" ref={navlinksRef}>
                     <NavlinkDropdown name={lang == "en" ? "EXPLORE" : "HŌPARA"} links={[
-                        <Navlink name={lang == "en" ? "BEACHES" : "TĀTAHI"} url="" key="1" />,
-                        <Navlink name={lang == "en" ? "BUSHES" : "PŪRANGI"} url="" key="2" />,
-                        <Navlink name={lang == "en" ? "MOUNTAINS" : "NGA MAUNGA"} url="" key="3" />
+                        <Navlink name={lang == "en" ? "BEACHES" : "TĀTAHI"} url="/explore/beaches" key="1" />,
+                        <Navlink name={lang == "en" ? "BUSHES" : "PŪRANGI"} url="/explore/bushes" key="2" />,
+                        <Navlink name={lang == "en" ? "MOUNTAINS" : "NGA MAUNGA"} url="/explore/mountains" key="3" />
                     ]} />
                     <Navlink name={lang == "en" ? "LANDMARKS" : "WHĀINGA AROARO"} url="" />
                     <Navlink name={lang == "en" ? "CULTURE" : "WHAKAARO"} url="" />
