@@ -7,8 +7,8 @@ A project for school
 3. ~~Create mountains page~~
 4. ~~Create mountains transition image~~
 5. Optimise images
-6. Add 404 page
-7. Add url to footer links
+6. ~~Add 404 page~~
+7. ~~Add url to footer links~~
 8. Optimise seo and accessibility
 
 <!-- # React + Vite
