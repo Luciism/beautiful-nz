@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage/HomePage'
 import Beaches from './pages/Beaches/Beaches';
 import Bushes from './pages/Bushes/Bushes';
 import Mountains from './pages/Mountains/Mountains';
+import NotFound from "./pages/NotFound/NotFound"
 
 function App() {
   const supportedLanguages = ["en", "reo"];
@@ -30,8 +31,9 @@ function App() {
             <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route exact path="/explore/beaches" element={<Beaches />} />
-            <Route exact path="/explore/bushes" element={<Bushes />} />
-            <Route exact path="/explore/mountains" element={<Mountains />} />
+              <Route exact path="/explore/bushes" element={<Bushes />} />
+              <Route exact path="/explore/mountains" element={<Mountains />} />
+              <Route path="/*" element={<NotFound />} />
             </Routes>
         </div>
         <Footer/ >

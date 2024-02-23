@@ -101,9 +101,9 @@ const Navbar = () => {
                         <Navlink name={lang == "en" ? "BUSHES" : "PŪRANGI"} url="/explore/bushes" key="2" />,
                         <Navlink name={lang == "en" ? "MOUNTAINS" : "NGA MAUNGA"} url="/explore/mountains" key="3" />
                     ]} />
-                    <Navlink name={lang == "en" ? "LANDMARKS" : "WHĀINGA AROARO"} url="" />
-                    <Navlink name={lang == "en" ? "CULTURE" : "WHAKAARO"} url="" />
-                    <Navlink name={lang == "en" ? "TOURISM" : "TŪRISMA"} url="" />
+                    <Navlink name={lang == "en" ? "LANDMARKS" : "WHĀINGA AROARO"} url="/landmarks" />
+                    <Navlink name={lang == "en" ? "CULTURE" : "WHAKAARO"} url="/culture" />
+                    <Navlink name={lang == "en" ? "TOURISM" : "TŪRISMA"} url="/tourism" />
                 </ul>
                 <LanguageSelector />
                 <div

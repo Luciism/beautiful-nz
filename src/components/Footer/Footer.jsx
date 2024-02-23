@@ -35,17 +35,17 @@ const Footer = () => {
             <FooterLinksCategory
                 name={lang == "en" ? "TOURISM" : "TŪRISMA"}
                 links={[
-                    { name: lang == "en" ? "Locations" : "Whāinga", url: "" },
-                    { name: lang == "en" ? "Guides" : "Kaiarāhi", url: "" },
-                    { name: lang == "en" ? "Information" : "Mōhiohio", url: "" },
+                    { name: lang == "en" ? "Locations" : "Whāinga", url: "/tourism/locations" },
+                    { name: lang == "en" ? "Guides" : "Kaiarāhi", url: "/tourism/guides" },
+                    { name: lang == "en" ? "Information" : "Mōhiohio", url: "/tourism/information" },
                 ]}
             />
             <FooterLinksCategory
                 name={lang == "en" ? "SOCIALS" : "TE WHAI WHAKAARO"}
                 links={[
-                    { name: lang == "en" ? "Facebook" : "Tā Facebook", url: "" },
-                    { name: lang == "en" ? "Twitter" : "Tā Twitter", url: "" },
-                    { name: lang == "en" ? "Instagram" : "Tā Instagram", url: "" },
+                    { name: lang == "en" ? "Facebook" : "Tā Facebook", url: "/socials/facebook" },
+                    { name: lang == "en" ? "Twitter" : "Tā Twitter", url: "/socials/twitter" },
+                    { name: lang == "en" ? "Instagram" : "Tā Instagram", url: "/socials/instagram" },
                 ]}
             />
             <FooterLinksCategory
