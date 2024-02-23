@@ -1,0 +1,176 @@
+.homepage {
+    & .intro-section {
+        background-image: url("../../assets/images/waitangi.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        & .new-zealand-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            & img {
+                width: min(600px, 90vw);
+                height: auto;
+                opacity: 0.85;
+            }
+        }
+    }
+
+    & .cards-section {
+        height: max-content; /* temp */
+        padding: 100px 75px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        & .card {
+            overflow: hidden;
+            margin: 25px 0;
+            width: min(420px, 90vw);
+            height: 320px;
+            /* background-color: rgba(0,0,0, 0.25); */
+            position: relative;
+            border-radius: 10px;
+
+            & img {
+                width: 90%;
+                height: auto;
+            }
+
+            & .card-info {
+                background-color: var(--secondary-translucent);
+                padding: 20px;
+                width: 80%;
+                position: absolute;
+                bottom: 0;
+
+                & h3, & p {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                & h3 {
+                    font-size: 20px;
+                }
+
+                & p {
+                    margin-bottom: 16px;
+                }
+
+                & .learn-more-btn {
+                    font-size: 1.001em; /* that fixes some goofy ahh padding issue, don't ask me how */
+                }
+            }
+
+            &.card-1 {
+                & img {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+
+            &.card-2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+            }
+
+            &.card-3 {
+                .card-info {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    & .tourism-guide-card {
+        position: absolute;
+        right: 10%;
+        top: 500px;
+        background-image: url("../../assets/images/skewed-rect.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        height: 160px;
+        width: 320px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & p, & a {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        & .heading-text {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        & .guide-link {
+            position: relative;
+            margin-top: 14px;
+            font-size: 18px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            & span {
+                margin-right: 4px;
+            }
+
+            & .icon {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &::after {
+                content: "";
+                width: 60px;
+                height: 1px;
+                background-color: white;
+                position: absolute;
+                bottom: -6px;
+                transition: width 0.3s ease-in-out;
+            }
+
+            &:hover {
+                & .icon {
+                    transform: translateX(4px);
+                }
+
+                &::after {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+@media(width < 1000px) {
+    .homepage {
+        & .cards-section {
+            padding: 100px 25px;
+        }
+    }
+}
