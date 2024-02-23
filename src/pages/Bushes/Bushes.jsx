@@ -34,6 +34,7 @@ const Bushes = () => {
                                 : "Ko Rangitoto te moutere whakatete ahi i Tauranga Moana, kei roto i ngā āhuru ahi me te ngāhere pōhutukawa nui rawa o te ao.",
                             url: "https://www.newzealand.com/int/feature/rangitoto-summit-track/"
                         }}
+                        key={1}
                     />,
                     <SceneryPanel
                         image={{src: BushMilfordTrackImage}}
@@ -46,6 +47,7 @@ const Bushes = () => {
                             url: "https://www.newzealand.com/int/feature/milford-track/",
                         }}
                         invert={true}
+                        key={2}
                     />,
                     <SceneryPanel
                         image={{src: BushRakiuraTrackImage}}
@@ -57,6 +59,7 @@ const Bushes = () => {
                                     : "Ko Te Ara o Rakiura, he ara herehere mō te wairua ki roto i ngā ngāhere kua kore e pā atu, me ngā waiata reka o te taiao.",
                             url: "https://www.newzealand.com/int/feature/rakiura-track/",
                         }}
+                        key={3}
                     />
                 ]}
             />

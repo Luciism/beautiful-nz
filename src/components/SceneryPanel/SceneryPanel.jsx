@@ -25,12 +25,11 @@ const SceneryPanel = ({ image, details, invert=false }) => {
 
         const resizeObserver = new ResizeObserver(() => {setClassName()});
         resizeObserver.observe(panelRef.current);
-        // window.addEventListener("resize", setClassName);
-
-        // return () => {
-        //     window.removeEventListener("resize", setClassName);
-        // }
-    }, [panelRef]);
+        
+        return () => {
+            resizeObserver.unobserve(panelRef.current);
+        }
+    });
 
     return (
         <div ref={panelRef}>

@@ -36,6 +36,7 @@ const Beaches = () => {
                                     : "Ko Tāi Piha, kei te taha o te Tai Rāwhiti o Te Ika a Māui, te tāi whakatete mātangi waka kaiwhairi nui o Aotearoa.",
                             url: "https://www.piha.co.nz/",
                         }}
+                        key={1}
                     />,
                     <SceneryPanel
                         image={{src: BeachHaheiImage}}
@@ -48,6 +49,7 @@ const Beaches = () => {
                             url: "https://www.hahei.co.nz/hahei.html",
                         }}
                         invert={true}
+                        key={2}
                     />,
                     <SceneryPanel
                         image={{src: BeachHotWaterImage}}
@@ -59,7 +61,8 @@ const Beaches = () => {
                                     : "Ko Tāi Waiariki kei Te Karamandela, kei runga i ngā waiariki i raro o te whenua e pū ana ki te one i te wā moana tata.",
                             url: "https://thecoromandel.com/explore/hot-water-beach",
                         }}
-                    />,
+                        key={3}
+                    />
                 ]}
             />
         </div>

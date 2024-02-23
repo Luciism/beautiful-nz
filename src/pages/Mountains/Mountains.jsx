@@ -36,6 +36,7 @@ const Mountains = () => {
                                     : "Ko Te Maunganui kei roto i te rohe o Taranaki, he maunga ahi whakaheke 2.5km te teitei.",
                             url: "https://en.wikipedia.org/wiki/Mount_Taranaki",
                         }}
+                        key={1}
                     />,
                     <SceneryPanel
                         image={{src: MountainsMountCook}}
@@ -48,6 +49,7 @@ const Mountains = () => {
                             url: "https://www.newzealand.com/au/aoraki-mount-cook/",
                         }}
                         invert={true}
+                        key={2}
                     />,
                     <SceneryPanel
                         image={{src: MountainsMountNgauruhoe}}
@@ -59,7 +61,8 @@ const Mountains = () => {
                                     : "Ko Ngāuruhoe he maunga ahi kōnui, 2500 tau te tau, kei roto i te huinga maunga ahi o Tongariro.",
                             url: "https://www.summitpost.org/mt-ngauruhoe/264900",
                         }}
-                    />,
+                        key={3}
+                    />
                 ]}
             />
         </div>
