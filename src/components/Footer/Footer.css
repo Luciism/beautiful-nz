@@ -14,9 +14,11 @@
         padding: 25px 25px;
 
         & .category-title {
-            & h3 {
+            & p {
                 padding: 2px 0;
                 margin: 0;
+                font-weight: 700;
+                font-size: 19px;
             }
 
             & hr {

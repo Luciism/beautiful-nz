@@ -9,7 +9,7 @@ const FooterLinksCategory = ({name, links}) => {
     return (
         <div className="footer-links-category">
             <div className="category-title">
-                <h3>{ name }</h3>
+                <p>{ name }</p>
                 <hr />
             </div>
             <ul>
