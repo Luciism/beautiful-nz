@@ -5,8 +5,8 @@ A project for school
 1. ~~Finish beaches page~~
 2. ~~Create bushes page~~
 3. ~~Create mountains page~~
-4. Create mountains transition image
-5. Opitimise images
+4. ~~Create mountains transition image~~
+5. Optimise images
 6. Add 404 page
 7. Add url to footer links
 8. Optimise seo and accessibility

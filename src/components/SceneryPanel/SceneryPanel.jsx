@@ -1,13 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useContext, useRef } from "react";
 import "./SceneryPanel.css";
-import { useRef } from "react";
+import { DataContext } from "../../DataContext";
 
 
-const SceneryPanel = ({ imageSrc, details, invert=false }) => {
+const SceneryPanel = ({ image, details, invert=false }) => {
     const panelRef = useRef();
+    const lang = useContext(DataContext).lang;
 
     const setClassName = () => {
-        if (panelRef.current !== undefined) {
+        if (![undefined, null].includes(panelRef.current)) {
             const width = panelRef.current.getBoundingClientRect().width
             
             let className = "scenery-panel" + (invert == true ? " inverted" : "");
@@ -18,7 +19,7 @@ const SceneryPanel = ({ imageSrc, details, invert=false }) => {
         }
     }
 
-    
+
     useEffect(() => {
         setClassName();
 
@@ -42,13 +43,13 @@ const SceneryPanel = ({ imageSrc, details, invert=false }) => {
                     target="_blank"
                     rel="noreferer"
                 >
-                    LEARN MORE
+                    {lang == "en" ? "LEARN MORE" : "WHAKAWHITI KIA MŌHIO"}
                 </a>
             </div>
             <div className="image-wrapper">
                 <img
-                    src={imageSrc}
-                    alt="Image representing specified location"
+                    src={image.src}
+                    alt={image.src ? image.src : "Image representing specified location"}
                     className="scenery-image"
                 />
             </div>
