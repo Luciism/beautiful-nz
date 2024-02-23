@@ -13,7 +13,7 @@ const FooterLinksCategory = ({name, links}) => {
                 <hr />
             </div>
             <ul>
-                {links.map((link, i) => <li key={i}><Link to={link.url}>{link.name}</Link></li>)}
+                {links.map((link, i) => <li key={i}><Link to={link.url} target={link.target ? link.target : ""}>{link.name}</Link></li>)}
             </ul>
         </div>
     );
@@ -51,8 +51,16 @@ const Footer = () => {
             <FooterLinksCategory
                 name={lang == "en" ? "OTHER" : "ANŌ HOKI"}
                 links={[
-                    { name: lang == "en" ? "Government Website" : "Pāpāho Awanui Whare Wānanga", url: "" },
-                    { name: lang == "en" ? "Github" : "Tā Github", url: "" },
+                    {
+                        name: lang == "en" ? "Government Website" : "Pāpāho Awanui Whare Wānanga",
+                        url: "https://www.govt.nz/",
+                        target: "_blank"
+                    },
+                    {
+                        name: lang == "en" ? "Github" : "Tā Github",
+                        url: "https://github.com/Luciism/beautiful-nz",
+                        target: "_blank"
+                    },
                 ]}
             />
         </footer>
