@@ -1,3 +1,12 @@
-.bushes-page-wrapper .scenery-page .scenery-intro::after {
-    background-image: url("../../assets/images/bush-transition.png");
+.bushes-page-wrapper .scenery-page {
+    & .scenery-intro{
+        background-image:
+            linear-gradient(to left, transparent, var(--background)),
+            url("../../assets/images/bush-wide.jpg");
+
+        &::after {
+            background-image: url("../../assets/images/bush-transition.png");
+        }
+
+    }
 }

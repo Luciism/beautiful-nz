@@ -7,7 +7,6 @@ import BushRangitotoSummitImage from "../../assets/images/bush-display-rangitoto
 import BushMilfordTrackImage from "../../assets/images/bush-display-milford-track.jpg";
 import BushRakiuraTrackImage from "../../assets/images/bush-display-rakiura-track.jpg";
 import SceneryPage from '../../components/SceneryPage/SceneryPage';
-const BushWide = "/src/assets/images/bush-wide.jpg";
 
 
 const Bushes = () => {
@@ -20,8 +19,7 @@ const Bushes = () => {
                     heading: lang == "en" ? ["AOTEAROA'S", "BUSHES"] : ["AOTEA ROA NGĀ", "HEREHERE"],
                     description: lang == "en"
                         ? "The \"green\" image of New Zealand is just the first brushstroke. When you delve deeper into the bush, you see the vibrant colors of its unique culture, resilience, and respect for the natural world."
-                        : "He whakaahua \"kakariki\" no Aotearoa te ahua tuatahi. Ki te whakauru atu ki ngā herehere, ka kite koe i ngā waiwai whānui o tōna ahurea motuhake, tōna kaha, me tōna whakapetapeta ki te ao tūroa.",
-                    backgroundImage: BushWide
+                        : "He whakaahua \"kakariki\" no Aotearoa te ahua tuatahi. Ki te whakauru atu ki ngā herehere, ka kite koe i ngā waiwai whānui o tōna ahurea motuhake, tōna kaha, me tōna whakapetapeta ki te ao tūroa."
                 }}
     
                 sceneryPanels={[

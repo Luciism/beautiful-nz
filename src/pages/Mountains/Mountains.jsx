@@ -7,7 +7,6 @@ import MountainsMountTaranaki from "../../assets/images/mountains-display-mount-
 import MountainsMountCook from "../../assets/images/mountains-display-mount-cook.jpg";
 import MountainsMountNgauruhoe from "../../assets/images/mountains-display-mount-ngauruhoe.jpg";
 import SceneryPage from '../../components/SceneryPage/SceneryPage';
-const MountainsWide = "/src/assets/images/mountains-wide.jpg";
 
 
 const Mountains = () => {
@@ -21,8 +20,7 @@ const Mountains = () => {
                     description:
                         lang === "en"
                             ? "New Zealand's majestic ranges beckon explorers, offering panoramic views and a profound connection to the wild, untouched beauty of this land."
-                            : "Ka karanga ngā raupo nui o Aotearoa ki ngā kaiwhakatoro, e whakawhiwhia ana ngā tirohanga whānui me te hononga hohonu ki te ataahua o tenei whenua herekore.",
-                    backgroundImage: MountainsWide,
+                            : "Ka karanga ngā raupo nui o Aotearoa ki ngā kaiwhakatoro, e whakawhiwhia ana ngā tirohanga whānui me te hononga hohonu ki te ataahua o tenei whenua herekore."
                 }}
 
                 sceneryPanels={[

@@ -7,7 +7,6 @@ import BeachPihaImage from "../../assets/images/beach-display-piha.jpg";
 import BeachHaheiImage from "../../assets/images/beach-display-hahei.jpg";
 import BeachHotWaterImage from "../../assets/images/beach-display-hot-water-beach.jpg";
 import SceneryPage from '../../components/SceneryPage/SceneryPage';
-const BeachWide = '/src/assets/images/beach-wide.jpg';
 
 
 const Beaches = () => {
@@ -22,8 +21,7 @@ const Beaches = () => {
                     description:
                         lang === "en"
                             ? "Beaches are an integral part of New Zealand's identity. New Zealand's warm climate makes the beach the perfect place to live out your summer holidays."
-                            : "He wāhanga nui ngā tāi ki te ahuatanga o Aotearoa. He wā kāore te makariri, he mea pai ngā tāi hei wā kaihōunu i ngā wā whakatā.",
-                    backgroundImage: BeachWide,
+                            : "He wāhanga nui ngā tāi ki te ahuatanga o Aotearoa. He wā kāore te makariri, he mea pai ngā tāi hei wā kaihōunu i ngā wā whakatā."
                 }}
                 sceneryPanels={[
                     <SceneryPanel
