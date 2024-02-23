@@ -3,11 +3,11 @@ import { useContext } from 'react';
 import { DataContext } from "../../DataContext";
 import './Beaches.css';
 import SceneryPanel from "../../components/SceneryPanel/SceneryPanel";
-import BeachPihaImage from "../../assets/images/beach-display-piha.png";
-import BeachHaheiImage from "../../assets/images/beach-display-hahei.png";
-import BeachHotWaterImage from "../../assets/images/beach-display-hot-water-beach.png";
+import BeachPihaImage from "../../assets/images/beach-display-piha.jpg";
+import BeachHaheiImage from "../../assets/images/beach-display-hahei.jpg";
+import BeachHotWaterImage from "../../assets/images/beach-display-hot-water-beach.jpg";
 import SceneryPage from '../../components/SceneryPage/SceneryPage';
-const BeachWide = '/src/assets/images/beach-wide.png';
+const BeachWide = '/src/assets/images/beach-wide.jpg';
 
 
 const Beaches = () => {

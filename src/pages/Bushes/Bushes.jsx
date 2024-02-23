@@ -3,11 +3,11 @@ import { DataContext } from '../../DataContext';
 
 import './Bushes.css';
 import SceneryPanel from "../../components/SceneryPanel/SceneryPanel";
-import BushRangitotoSummitImage from "../../assets/images/bush-display-rangitoto-summit.png";
-import BushMilfordTrackImage from "../../assets/images/bush-display-milford-track.png";
-import BushRakiuraTrackImage from "../../assets/images/bush-display-rakiura-track.png";
+import BushRangitotoSummitImage from "../../assets/images/bush-display-rangitoto-summit.jpg";
+import BushMilfordTrackImage from "../../assets/images/bush-display-milford-track.jpg";
+import BushRakiuraTrackImage from "../../assets/images/bush-display-rakiura-track.jpg";
 import SceneryPage from '../../components/SceneryPage/SceneryPage';
-const BushWide = "/src/assets/images/bush-wide.png";
+const BushWide = "/src/assets/images/bush-wide.jpg";
 
 
 const Bushes = () => {

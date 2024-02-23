@@ -3,11 +3,11 @@ import { DataContext } from '../../DataContext';
 
 import "./Mountains.css";
 import SceneryPanel from "../../components/SceneryPanel/SceneryPanel";
-import MountainsMountTaranaki from "../../assets/images/mountains-display-mount-taranaki.png";
-import MountainsMountCook from "../../assets/images/mountains-display-mount-cook.png";
-import MountainsMountNgauruhoe from "../../assets/images/mountains-display-mount-ngauruhoe.png";
+import MountainsMountTaranaki from "../../assets/images/mountains-display-mount-taranaki.jpg";
+import MountainsMountCook from "../../assets/images/mountains-display-mount-cook.jpg";
+import MountainsMountNgauruhoe from "../../assets/images/mountains-display-mount-ngauruhoe.jpg";
 import SceneryPage from '../../components/SceneryPage/SceneryPage';
-const MountainsWide = "/src/assets/images/mountains-wide.png";
+const MountainsWide = "/src/assets/images/mountains-wide.jpg";
 
 
 const Mountains = () => {
