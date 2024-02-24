@@ -19,14 +19,18 @@
         height: auto;
         flex-direction: column !important;
 
+        & .image-wrapper {
+            height: 300px;
+        }
+        
         & .details-container,
         & .image-wrapper {
             width: 100%;
-            height: 300px;
         }
 
         & .details-container {
             padding: 50px;
+            min-height: 300px;
         }
     }
 
