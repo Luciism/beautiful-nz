@@ -34,7 +34,7 @@ const HomePage = () => {
                         <div className="card-info">
                             <h3>{lang == "en" ? "OUR CULTURE" : "TŌ TĀTOU TIKANGA"}</h3>
                             <p>{lang == "en" ? "Uncover the treasures of Māori culture." : "Whakahorohia ngā Taonga o te Ao Māori."}</p>
-                            <Link to="" className='learn-more-btn pill-btn background-gradient-down'>{lang == "en" ? "LEARN MORE" : "WHAKAWHITI KIA MŌHIO"}</Link>
+                            <Link to="/culture" className='learn-more-btn pill-btn background-gradient-down'>{lang == "en" ? "LEARN MORE" : "WHAKAWHITI KIA MŌHIO"}</Link>
                         </div>
                     </div>
 
@@ -43,7 +43,7 @@ const HomePage = () => {
                         <div className="card-info">
                             <h3>{lang == "en" ? "DISCOVER SCENERY" : "WHIWHI KI TE WAI O TE WHENUA"}</h3>
                             <p>{lang == "en" ? "Aotearoa's untamed wilderness." : "Te Ao Whakaharahara o Aotearoa."}</p>
-                            <Link to="" className='learn-more-btn pill-btn background-gradient-down'>{lang == "en" ? "LEARN MORE" : "WHAKAWHITI KIA MŌHIO"}</Link>
+                            <Link to="/scenery" className='learn-more-btn pill-btn background-gradient-down'>{lang == "en" ? "LEARN MORE" : "WHAKAWHITI KIA MŌHIO"}</Link>
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@ const HomePage = () => {
                         <div className="card-info">
                             <h3>{lang == "en" ? "ADMIRE ART" : "WHAKAMIHI KI TE TOI"}</h3>
                             <p>{lang == "en" ? "Immerse yourself in artistic expression." : "Whakamihi ki te toi, huri ki te ao o te waiata."}</p>
-                            <Link to="" className='learn-more-btn pill-btn background-gradient-down'>{lang == "en" ? "LEARN MORE" : "WHAKAWHITI KIA MŌHIO"}</Link>
+                            <Link to="/art" className='learn-more-btn pill-btn background-gradient-down'>{lang == "en" ? "LEARN MORE" : "WHAKAWHITI KIA MŌHIO"}</Link>
                         </div>
                     </div>
 
@@ -61,7 +61,7 @@ const HomePage = () => {
 
             <div className="tourism-guide-card">
                 <p className="heading-text">{lang == "en" ? "Planning a trip?" : "Ka hīoi rā koe i tētahi haerenga?"}</p>
-                <Link className="guide-link" to="">
+                <Link className="guide-link" to="/tourism">
                     <span>{lang == "en" ? "View our tourism guide" : "Tirohia te tāringa haerenga a mātou"}</span>
                     <Icon className='icon' icon="ep:right" />
                 </Link>
